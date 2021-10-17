@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Math.sqrt
 import render.animations.*
 
+
 class MainActivity : AppCompatActivity(),SensorEventListener {
 
 //    val TAG: String = "로그"
@@ -74,7 +75,7 @@ class MainActivity : AppCompatActivity(),SensorEventListener {
             val render = Render(this)
 
             // Set Animation
-            render.setAnimation(Bounce().InDown(textView))
+            render.setAnimation(Attention().Wobble(face_img))
             render.start()
 
             Handler().postDelayed({
